@@ -1,0 +1,14 @@
+
+// src/components/ui/progress.jsx
+const Progress = ({ value }) => {
+  return (
+    <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+      <div
+        className="bg-green-500 h-4 transition-all duration-300"
+        style={{ width: `${value}%` }}
+      ></div>
+    </div>
+  );
+};
+
+export { Progress };
